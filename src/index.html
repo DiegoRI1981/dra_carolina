@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+    <link rel="icon" type="image/jpg" href="./../img/cri-salud-ocupacional-favicon-color.png" />
+    <script src="https://kit.fontawesome.com/f376deb2a8.js" crossorigin="anonymous"></script>
+    <title>Dra. Carolina - Medico Ocupacional</title>
+    <meta name="description"
+        content="Médico ocupacional, especializado en evaluar y gestionar la salud de los trabajadores en relación con su entorno laboral, con el objetivo de prevenir y tratar enfermedades o lesiones relacionadas con el trabajo, así como promover un entorno laboral seguro y saludable" />
+    <meta name="keywords"
+        content="Medico Ocupacional, Medico Ocupacional Lima, Medico para Empresas, Gestión de salud laboral, Medicina laboral, " />
+
+</head>
+
+<body>
+    <header class="sticky top-0 z-50">
+
+        <nav class=" px-10 flex justify-between items-center bg-color-primary-dark text-color-white">
+            <div class="py-5">
+                <a href="#top">
+                    <img class="w-16 h-auto"
+                        src="./../img/cri-salud-ocupacional-high-resolution-logo-white-transparent.png"
+                        alt="logo dra. carolina salud ocupacional">
+                </a>
+            </div>
+
+            <div>
+                <ul class="nav hidden lg:flex items-center space-x-6 ">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#work-experience">Work
+                            experience</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div id="hamburger" class="lg:hidden cursor-pointer z-50">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div id="menu" class="hidden bg-color-primary-dark h-[35vh] absolute inset-0">
+                <ul class="nav h-full grid place-items-center py-10">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#work-experience">Work
+                            experience</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+    <main>
+
+        <section id="home" style=""
+            class=" bg-color-primary  py-20 flex flex-col justify-between items-center z-20 md:flex-row">
+            <div class="container text-center">
+                <h1 class="text-3xl md:text-4xl text-color-white font-bold leading-snug mb-4">Dra. Carolina
+                    Rodriguez
+                    Iglesias</h1>
+                <h2 class="text-2xl text-color-white leading-relaxed mb-4">Medico
+                    Ocupacional</h2>
+                <a href="https://www.linkedin.com/in/diego-rodr%C3%ADguez-236117238/"><i
+                        class="fab fa-linkedin-in icon mx-7 text-lg "></i></a>
+            </div>
+            <div class="mt-4 md:w-1/2">
+                <img class="w-60 h-auto rounded-lg" src="../img/Dra._Carolina Rodriguez.jpg"
+                    alt="Dra. Carolina Rodriguez - Medico Ocupacional">
+            </div>
+        </section>
+
+        <section id="about" class=" bg-color-white text-color-primary-dark py-20 px-20 items-center z-20">
+            <div class="container text-center">
+                <h2 class="text-2xl leading-relaxed ">SOBRE MI</h2>
+                <p class="text-2xl leading-relaxed mx-10">
+                    Médico ocupacional, especializado en evaluar y gestionar la salud de los trabajadores en relación
+                    con su entorno
+                    laboral, con el objetivo de prevenir y tratar enfermedades o lesiones relacionadas con el trabajo,
+                    así como promover un
+                    entorno laboral seguro y saludable.
+                    Soy una persona responsable, dinámica y creativa, con capacidad de trabajar bajo alta presión, así
+                    como con iniciativa
+                    ante resolución de problemas. Con muchas ganas de trabajar para lograr las metas y objetivos
+                    trazados. Mi formación
+                    profesional me permite tener la capacidad de aportar valor y desarrollar mis conocimientos
+
+                </p>
+            </div>
+        </section>
+        <section id="work-experience" class=" bg-color-primary text-color-white py-20 px-20 items-center z-20">
+            <div class="container text-center">
+                <h2 class="text-2xl leading-relaxed ">SOBRE MI</h2>
+                <p class="text-2xl leading-relaxed mx-10">
+                    Médico ocupacional, especializado en evaluar y gestionar la salud de los trabajadores en relación
+                    con su entorno
+                    laboral, con el objetivo de prevenir y tratar enfermedades o lesiones relacionadas con el trabajo,
+                    así como promover un
+                    entorno laboral seguro y saludable.
+                    Soy una persona responsable, dinámica y creativa, con capacidad de trabajar bajo alta presión, así
+                    como con iniciativa
+                    ante resolución de problemas. Con muchas ganas de trabajar para lograr las metas y objetivos
+                    trazados. Mi formación
+                    profesional me permite tener la capacidad de aportar valor y desarrollar mis conocimientos
+
+                </p>
+            </div>
+        </section>
+    </main>
+    <script>
+
+        const navbar = document.querySelector('header')
+
+        window.onscroll = () => {
+            if (window.scrollY > 100) {
+                navbar.classList.add('bg-color-primary-dark')
+                navbar.classList.add('border-b')
+                navbar.classList.add('border-color-gray')
+            } else {
+                navbar.classList.remove('bg-color-primary-dark')
+                navbar.classList.remove('border-b')
+                navbar.classList.remove('border-color-gray')
+            }
+        }
+
+        const hamburger = document.querySelector('#hamburger')
+        const menu = document.querySelector('#menu')
+        const hlink = document.querySelectorAll('#hlink')
+        const faSolid = document.querySelector('.fa-solid')
+
+        hamburger.addEventListener("click", () => {
+            menu.classList.toggle('hidden');
+            faSolid.classList.toggle('fa-xmark')
+        })
+        const hlinks = document.querySelectorAll('#menu');
+        hlinks.forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.toggle('hidden');
+                faSolid.classList.toggle('fa-xmark')
+            })
+        });
+
+        const toggleBtn = document.getElementById('toggleBtn')
+    </script>
+
+</body>
+
+</html>
